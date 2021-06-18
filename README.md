@@ -10,3 +10,6 @@ This repository contains a demo of Beef in the UCR dataset. You can run the comm
   
   Test: python STCN_load_Beef.py
 ````
+# Data
+The data used in the paper is obtained from：
+https://www.cs.ucr.edu/~eamonn/time_series_data_2018/
