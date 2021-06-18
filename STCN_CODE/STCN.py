@@ -190,13 +190,13 @@ class ESN_clustering:
                 elif  i%6>1:
                     win_,p_loss,c_loss,cluster_re,_,wout_,L_= sess.run([win,pre_loss,cluster_loss,cluster_result,optimizer_ESN,wout, matrix_L],
                                      feed_dict={X: batch_x_train, Y: nb_train, y_pseudo: y_pse, W: W_reg})
-                #-------------------test------------------------
                 if (i%6==0)&(i!=0):
                     print('steps:' + str(i/6) + '/' + str(self.nb_steps))
             print('finished')
         tf.reset_default_graph()
-###-----------------------Hyperparameter  setting--------------------------------------
+
 if __name__=='__main__':
+    ###-----------------------Hyperparameter  setting--------------------------------------
     lambda1=1
     LK =0.9
     delta=1
